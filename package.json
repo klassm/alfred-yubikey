@@ -10,8 +10,6 @@
     "hook-std": "^2.0.0"
   },
   "scripts": {
-    "postinstall": "alfred-link",
-    "preuninstall": "alfred-unlink",
     "alfredPackage": "rm -f zip alfred-yubikey.alfredworkflow && zip alfred-yubikey.alfredworkflow ./* -x@alfred_package.ignore"
   },
   "devDependencies": {
