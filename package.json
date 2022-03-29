@@ -1,0 +1,20 @@
+{
+  "name": "alfred-yubikey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "alfred-link": "^0.3.1",
+    "alfy": "^0.11.1",
+    "lodash": "^4.17.21",
+    "hook-std": "^2.0.0"
+  },
+  "scripts": {
+    "postinstall": "alfred-link",
+    "preuninstall": "alfred-unlink",
+    "alfredPackage": "rm -f zip alfred-yubikey.alfredworkflow && zip alfred-yubikey.alfredworkflow ./* -x@alfred_package.ignore"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.168"
+  }
+}
